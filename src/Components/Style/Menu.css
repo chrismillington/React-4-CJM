@@ -1,0 +1,12 @@
+.Menu {
+  background-color: darkorange;
+}
+.Menu ul {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.Menu ul li {
+  font: 600 20pt sans-serif;
+  padding: 10px 0;
+  border-bottom: 2px solid navy;
+}

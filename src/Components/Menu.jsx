@@ -1,18 +1,18 @@
 import "./Style/Menu.css";
-const Menu = () => {
+const Menu = ({ changeSelected }) => {
   return (
     <div className="Menu">
       <ul>
-        <li onClick={null}>Cover</li>
-        <li onClick={null}>Components</li>
-        <li onClick={null}>Props</li>
-        <li onClick={null}>Events</li>
-        <li onClick={null}>Conditionals</li>
-        <li onClick={null}>Lists</li>
-        <li onClick={null}>Forms</li>
-        <li onClick={null}>Router</li>
-        <li onClick={null}>Memo</li>
-        <li onClick={null}>Hooks</li>
+        <li onClick={() => changeSelected("Cover")}>Cover</li>
+        <li onClick={() => changeSelected("Components")}>Components</li>
+        <li onClick={() => changeSelected("Props")}>Props</li>
+        <li onClick={() => changeSelected("Events")}>Events</li>
+        <li onClick={() => changeSelected("Condition")}>Conditionals</li>
+        <li onClick={() => changeSelected("Lists")}>Lists</li>
+        <li onClick={() => changeSelected("Forms")}>Forms</li>
+        <li onClick={() => changeSelected("Router")}>Router</li>
+        <li onClick={() => changeSelected("Memo")}>Memo</li>
+        <li onClick={() => changeSelected("Hooks")}>Hooks</li>
       </ul>
     </div>
   );

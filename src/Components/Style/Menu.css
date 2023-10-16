@@ -1,12 +1,21 @@
 .Menu {
-  background-color: darkorange;
+  background-color: #c9720988;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 0;
+  text-align: right;
 }
 .Menu ul {
   list-style-type: none;
   padding: 0 10px;
+  margin: 0;
+  display: inline;
+  float: right;
 }
 .Menu ul li {
   font: 600 20pt sans-serif;
+  background-color: #fff;
   padding: 10px 0;
-  border-bottom: 2px solid navy;
+  border-bottom: 4px solid navy;
 }

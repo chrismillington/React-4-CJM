@@ -1,13 +1,14 @@
 import "./Style/topicPage.css";
 const Components = () => {
-  return <div className="info">Components</div>;
+  return (
+    <div className="info">
+      <div className="heading">Components</div>
+      <p>
+        Components are the bedrock of react. Components contain an area for JSX
+        and return HTML( potentially with JSX included in {}
+      </p>
+    </div>
+  );
 };
 
-/*
-To do 15/10 Morning 
-- Make components
-- make cover
-- Think up 3 new custom components to make
-  - Slideshow
-*/
 export default Components;

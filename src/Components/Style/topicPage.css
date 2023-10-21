@@ -14,8 +14,10 @@
 .heading {
   color: #000080;
   font: 600 36pt Courier;
+  display: block;
 }
 p {
   color: #000080;
   font: 400 20pt Courier;
+  display: block;
 }

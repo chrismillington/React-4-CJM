@@ -1,11 +1,14 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #000;
+}
 
 .Page {
   display: flex;
   flex-direction: row;
-  background-color: darkgray;
-  height: 100vh;
+  background-color: #000;
+
   width: 90vw;
 }

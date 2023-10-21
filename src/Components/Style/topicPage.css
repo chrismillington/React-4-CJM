@@ -1,25 +1,14 @@
 .info {
-  border: #a52a2a solid 4px;
-  border-left: #000080 solid 4px;
-  border-right: 10px solid #000080;
-
+  border: navy solid 4px;
   background-color: #fff;
-
   width: 100%;
-
+  border-left: 10px solid navy;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-
-  padding: 10vh 5vw;
-  height: 100vh;
-  max-width: 1600px;
+  padding: 0 5vw;
   margin: 0;
-
-  box-shadow: -2px 0 5px #000;
-  overflow-y: scroll;
-  scrollbar-color: dark;
 }
 
 .heading {
@@ -27,30 +16,8 @@
   font: 600 36pt Courier;
   display: block;
 }
-p,
-li,
-input {
-  color: #000080;
-  font: 400 20pt cursive;
-}
-img {
-  width: 50vw;
-  height: 40vh;
-  min-width: 500px;
-  max-width: 600px;
-}
-.label {
-  display: block;
-  color: #000080;
-  font: 400 20pt cursive;
-}
-a {
-  text-decoration-color: #ff0000;
+p {
   color: #000080;
   font: 400 20pt Courier;
   display: block;
-}
-span,
-::placeholder {
-  color: #ff0000;
 }

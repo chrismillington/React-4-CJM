@@ -1,13 +1,12 @@
 import "./Style/topicPage.css";
 
 const Events = () => {
-  const event = (msg) => {
-    alert(msg);
+  const event = (e) => {
+    alert(e.target.value);
   };
 
   return (
     <div className="info">
-      <span onCopy={() => event("")}></span>
       <div className="heading">Events</div>
       <p>
         Events in React are declared with an on prefix , such as onClick. A full
@@ -15,27 +14,36 @@ const Events = () => {
       </p>
       <ul>
         <li>
-          <span onCopy={() => event("onCopy")}>onCopy </span> + onCut & onPaste
+          <span onCopy={event} value="onCopy">
+            onCopy
+          </span>
+          + onCut & onPaste
         </li>
         <li>
-          <input
-            type="text"
-            placeholder="onCompositionStart"
-            onCompositionStart={() => event("onCompositionStart")}
-          />
-          + onCompositionEnd & onCompositionUpdate
+          <input type="text" placeholder="onKeyDown" onKeyDown={event} /> +
+          onKeyUp & onKeyPress
         </li>
-        <li>onKeyDown + onKeyUp & onKeyPress</li>
-        <li>onFocus + onBlur</li>
         <li>
-          <input type="text" placeholder="onChange" onChange />+ onInput ,
-          onInvalid , onReset , onSubmit{" "}
+          <input type="text" placeholder="onChange" onChange={event} />+ onInput
+          , onInvalid , onReset , onSubmit{" "}
         </li>
-        onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter
-        onDragExit onDragLeave onDragOver onDragStart onDrop onMouseDown
-        onMouseEnter onMouseLeave onMouseMove onMouseOut onMouseOver onMouseUp
-        onPointerDown onPointerMove onPointerUp onPointerCancel
-        onGotPointerCapture onLostPointerCapture onPointerEnter onPointerLeave
+        <li>
+          <span onClick={event}>onClick</span> & onContextMenu, onDoubleClick
+        </li>
+        <li>
+          <span onDrag={event} value="onCopy">
+            onDrag
+          </span>
+          + onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver,
+          onDragStar, onDrop
+        </li>
+        <li>
+          <span onMouseDown={event} value="onMouseDown">
+            onMouseDown
+          </span>
+          & onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver,
+          onMouseUp
+        </li>
       </ul>
     </div>
   );

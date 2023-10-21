@@ -7,7 +7,7 @@ const Menu = ({ changeSelected }) => {
         <li onClick={() => changeSelected("Components")}>Components</li>
         <li onClick={() => changeSelected("Props")}>Props</li>
         <li onClick={() => changeSelected("Events")}>Events</li>
-        <li onClick={() => changeSelected("Condition")}>Conditionals</li>
+        <li onClick={() => changeSelected("Conditionals")}>Conditionals</li>
         <li onClick={() => changeSelected("Lists")}>Lists</li>
         <li onClick={() => changeSelected("Forms")}>Forms</li>
         <li onClick={() => changeSelected("Router")}>Router</li>

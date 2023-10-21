@@ -1,17 +1,20 @@
 import "./Style/topicPage.css";
 import { useState } from "react";
 
-const Slider = ({ pics }) => {
+const Slider = ({ pics, label }) => {
   const [bravo, setBravo] = useState(0);
   return (
     <div className="slideImage">
-      <img
-        src={pics[bravo]}
-        onClick={() =>
-          bravo === pics.length - 1 ? setBravo(0) : setBravo(bravo + 1)
-        }
-        alt="Sliding Image, Click to advance"
-      />
+      <label>
+        <div className="label">{label}</div>
+        <img
+          src={pics[bravo]}
+          onClick={() =>
+            bravo === pics.length - 1 ? setBravo(0) : setBravo(bravo + 1)
+          }
+          alt={label}
+        />
+      </label>
       ;
     </div>
   );

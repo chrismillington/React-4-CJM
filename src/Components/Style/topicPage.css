@@ -1,21 +1,51 @@
 .info {
-  border: navy solid 4px;
+  border: #a52a2a solid 4px;
+  border-left: #000080 solid 4px;
+  border-right: 10px solid #000080;
+
   background-color: #fff;
+
   width: 100%;
-  border-left: 10px solid navy;
+
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 0 5vw;
+
+  padding: 10vh 5vw;
+  height: 100vh;
+  max-width: 1600px;
   margin: 0;
+
+  box-shadow: -2px 0 5px #000;
+  overflow-y: scroll;
+  scrollbar-color: dark;
 }
 
 .heading {
   color: #000080;
-  font: 600 36pt Courier;
+  font: 600 36pt cursive;
+  text-decoration: underline red;
 }
-p {
+p,
+li,
+input,
+.label {
   color: #000080;
-  font: 400 20pt Courier;
+  font: 400 20pt cursive;
+}
+img {
+  width: 50vw;
+  height: 40vh;
+  min-width: 500px;
+  max-width: 600px;
+}
+.label {
+  font-family: "Courier New", Courier, monospace;
+  color: #000080;
+  display: block;
+}
+a {
+  text-decoration-color: #ff0000;
+  color: #000080;
 }

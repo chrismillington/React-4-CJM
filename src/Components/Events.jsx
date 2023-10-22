@@ -31,10 +31,7 @@ const Events = () => {
           <span onClick={event}>onClick</span> & onContextMenu, onDoubleClick
         </li>
         <li>
-          <span onDrag={event} value="onCopy">
-            onDrag
-          </span>
-          + onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver,
+          onDrag + onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver,
           onDragStar, onDrop
         </li>
         <li>

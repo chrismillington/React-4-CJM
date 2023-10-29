@@ -33,6 +33,7 @@ input,
 .label {
   color: #000080;
   font: 400 20pt cursive;
+  margin: 10px 0px;
 }
 img {
   width: 50vw;
@@ -44,6 +45,7 @@ img {
   font-family: "Courier New", Courier, monospace;
   color: #000080;
   display: block;
+  margin-top: 20px;
 }
 a {
   text-decoration-color: #ff0000;
@@ -70,5 +72,17 @@ a {
 p {
   color: #000080;
   font: 400 20pt Courier;
+  display: block;
+}
+
+.output {
+  color: #000;
+  background-color: #00ffff;
+  font: 400 30pt sans-serif;
+  padding: 15px;
+  border: 5px solid black;
+  display: block;
+}
+#submit {
   display: block;
 }

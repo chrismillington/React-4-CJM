@@ -1,4 +1,7 @@
 import "./Style/Menu.css";
+import Components from "./Components";
+import Lists from "./Lists";
+
 
 const Router = () => {
   return (

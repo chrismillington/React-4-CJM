@@ -6,7 +6,10 @@ const Slider = ({ pics, label }) => {
   return (
     <div className="slideImage">
       <label>
-        <div className="label">{label}</div>
+        <div className="label">
+          {label}
+          {pics.length > 1 && " - Click to see more"}
+        </div>
         <img
           src={pics[bravo]}
           onClick={() =>

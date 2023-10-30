@@ -13,6 +13,7 @@ const Menu = ({ changeSelected }) => {
         <li onClick={() => changeSelected("Router")}>Router</li>
         <li onClick={() => changeSelected("Memo")}>Memo</li>
         <li onClick={() => changeSelected("Hooks")}>Hooks</li>
+        <li onClick={() => changeSelected("Notes")}>Notes</li>
       </ul>
     </div>
   );

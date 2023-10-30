@@ -5,8 +5,9 @@ import Events from "./Events";
 import Lists from "./Lists";
 import Props from "./Props";
 import Forms from "./Forms";
+import Notes from "./Notes";
 import Router from "./Router";
-//import Hooks from "./Hooks";
+import Hooks from "./Hooks";
 
 const Info = ({ setPage }) => {
   return (
@@ -20,6 +21,7 @@ const Info = ({ setPage }) => {
       {setPage === "Forms" && <Forms />}
       {setPage === "Router" && <Router />}
       {setPage === "Hooks" && <Hooks />}
+      {setPage === "Notes" && <Notes />}
     </>
   );
 };

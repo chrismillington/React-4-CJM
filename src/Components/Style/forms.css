@@ -1,0 +1,40 @@
+.info {
+  border: #a52a2a solid 4px;
+  border-left: #000080 solid 4px;
+  border-right: 10px solid #000080;
+
+  background-color: #fff;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  padding: 10vh 5vw;
+  min-height: 100vh;
+  max-width: 1600px;
+  margin: 0;
+
+  box-shadow: -2px 0 5px #000;
+  overflow-y: scroll;
+  scrollbar-color: dark;
+}
+
+.heading {
+  color: #000080;
+  font: 600 36pt cursive;
+  text-decoration: underline #808080;
+}
+p,
+li,
+label {
+  color: #800080;
+  font: 400 20pt cursive;
+  margin: 10px 0px;
+}
+form .form-control {
+  color: #000;
+  font: 400 20pt cursive;
+  border: 1px solid #808080;
+}
